@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+	Author: Gabbo aka Drogo
+	Copyright © 2020
+	This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+	https://creativecommons.org/licenses/by-sa/4.0/
+ -->
+ 
+<root version="3.3" release="1.02">
+<!-- Set the extension's announcement -->
+	<announcement text="5DC Extension. CT Slash Commands v1.02.\rFor the command list type /ctscINFO" font="emotefont" icon="5DC" />
+	
+<!-- Initialize the extension's properties -->
+	<properties>
+		<name>Feature - 5DC. CT Slash Commands</name>
+		<version>1.02</version>
+		<loadorder>5</loadorder>
+		<author>5DC</author>
+		<website></website>
+		<description>This extension allow the DM to call the CT commands using the slash-command</description>
+	
+	<!-- Supported Rulesets. -->
+		<ruleset>
+			<name>5E</name>
+		</ruleset>
+	</properties>
+	
+	<base>
+	<!-- Create folders to separate your calling objects, like graphics, scripts and campaign -->
+	<!-- Load the extension graphics -->
+		<icon name="5DC" file="graphic/5DC.png" /> <!-- 32x32 px .png showed in chat box at load -->
+	
+	<!-- Load the extension's lua scripts -->
+		<script name="CTCommands" file="scripts/CT_commands.lua" /> <!-- lua script that define the function you want to build -->
+
+	</base>
+</root>
