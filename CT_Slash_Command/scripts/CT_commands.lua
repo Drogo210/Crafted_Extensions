@@ -8,13 +8,13 @@
 function onInit()
 Debug.chat(Session.IsHost);
 	if User.isHost()  then
-		Comm.registerSlashHandler("ctscINFO", infoCTSlashCommand);
-		Comm.registerSlashHandler("ctLR", CTSlashCommandLongRest);
-		Comm.registerSlashHandler("ctSR", CTSlashCommandShortRest);
-		Comm.registerSlashHandler("ctAllIn", CTSlashCommandAllInitiative);
-		Comm.registerSlashHandler("ctPCIn", CTSlashCommandPCInitiative);
-		Comm.registerSlashHandler("ctNPCIn", CTSlashCommandNPCInitiative);
-		Comm.registerSlashHandler("ctInReset", CTSlashCommandInitiativeReset);
+		registerSlashHandler("ctscINFO", infoCTSlashCommand);
+		registerSlashHandler("ctLR", CTSlashCommandLongRest);
+		registerSlashHandler("ctSR", CTSlashCommandShortRest);
+		registerSlashHandler("ctAllIn", CTSlashCommandAllInitiative);
+		registerSlashHandler("ctPCIn", CTSlashCommandPCInitiative);
+		registerSlashHandler("ctNPCIn", CTSlashCommandNPCInitiative);
+		registerSlashHandler("ctInReset", CTSlashCommandInitiativeReset);
 	end
 end
 
